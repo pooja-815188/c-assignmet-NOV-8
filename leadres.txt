@@ -1,0 +1,27 @@
+/*C Function to print leaders in an array */
+#include<stdio.h>
+void picked(int arr[],int size)
+{
+    int i,j;
+    for(i=0;i<size;i++)
+    {
+        for(j=i+1;j<size;j++)
+        {
+            if(arr[i]<=arr[j])
+            {
+                break;
+            }
+        }
+        if(j==size)
+            {
+                printf("%d\t",arr[i]);
+            }
+    }
+   
+}
+int main()
+{
+    int arr[]={16,17,4,3,5,2};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    picked(arr,size);
+}
