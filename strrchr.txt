@@ -1,0 +1,11 @@
+#include <stdio.h>  
+#include <string.h>  
+int main ()  
+{  
+    char str[] = "Program using strchr";  
+    char ch = 'g';  
+    char *ptr;   
+    printf (" Original string is: %s \n", str);  
+    ptr = strrchr( str, ch);  
+    printf("%s\n",ptr);
+}  
