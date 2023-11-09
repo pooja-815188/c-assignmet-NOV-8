@@ -1,0 +1,13 @@
+2)  strchr
+
+#include <stdio.h>  
+#include <string.h>  
+int main ()  
+{  
+    char str[] = "Program using strchr";  
+    char ch = 'r';  
+    char *ptr;   
+    printf (" Original string is: %s \n", str);  
+    ptr = strchr( str, ch);  
+    printf("%s\n",ptr);
+}  
